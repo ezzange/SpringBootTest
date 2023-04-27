@@ -37,4 +37,4 @@ https://docs.spring.io/spring-security/reference/servlet/configuration/java.html
 @EnableWebSecurity 어노테이션하여 SecurityFilterChain Bean적용(httpSecurity)
 
 https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/dao-authentication-provider.html
-springSecurity에서 제공하는 로그인폼을 활용하여 DaoAuthenticationProvider를 이용한 인증 방법
+springSecurity에서 제공하는 로그인폼을 활용하여 DaoAuthenticationProvider로 인증
