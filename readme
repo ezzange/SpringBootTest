@@ -1,1 +1,38 @@
-?
+----------------------------------------
+초기 setting
+
+spring Boot Devetools
+lombok
+spring Configuration Processor
+Spring Data JPA
+MariaDB Driver
+Spring Security
+OAuth2 Client
+Thymeleaf
+Spring Web
+
+----------------------------------------
+DB설정
+
+#datasource : aws mariadb
+
+#jpa config
+spring.jpa.show-sql=true
+spring.jpa.generate-ddl=false
+spring.jpa.open-in-view=false
+
+----------------------------------------
+layout
+
+기본페이지
+Thymeleaf - Difference between th:insert and th:replace
+
+admin페이지
+Thymeleaf - Including template fragments
+
+----------------------------------------
+security
+(spring.io 의 DOC참고)
+https://docs.spring.io/spring-security/reference/servlet/configuration/java.html
+@EnableWebSecurity 어노테이션하여 SecurityFilterChain Bean적용(httpSecurity)
+
