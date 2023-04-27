@@ -23,12 +23,10 @@ spring.jpa.open-in-view=false
 
 ----------------------------------------
 layout
+https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#template-layout
 
-기본페이지
-Thymeleaf - Difference between th:insert and th:replace
-
-admin페이지
-Thymeleaf - Including template fragments
+기본페이지 - Difference between th:insert and th:replace
+admin페이지 - Including template fragments
 
 ----------------------------------------
 security
