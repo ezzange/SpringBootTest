@@ -12,7 +12,7 @@ Thymeleaf
 Spring Web
 
 ----------------------------------------
-DB설정
+DB 설정
 
 #datasource : aws mariadb
 
@@ -22,7 +22,7 @@ spring.jpa.generate-ddl=false
 spring.jpa.open-in-view=false
 
 ----------------------------------------
-layout
+layout 패턴
 https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#template-layout
 
 기본페이지 - Difference between th:insert and th:replace
@@ -33,4 +33,3 @@ security
 (spring.io 의 DOC참고)
 https://docs.spring.io/spring-security/reference/servlet/configuration/java.html
 @EnableWebSecurity 어노테이션하여 SecurityFilterChain Bean적용(httpSecurity)
-
