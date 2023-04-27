@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+th:fragment="commLayout(head, main)">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="/css/commons/common.css">
+	<!-- 추가 head 소스가 삽입될 영역 -->
+	<th:block th:replace="${head}"/>
+</head>
+<body>
+	<header>
+		<h1>상단영역</h1>
+		<div class="wrap">
+			<p>메뉴와 로고등을 구현</p>
+		</div>
+	</header>
+	
+	<!-- 메인영역이 들어갈 영역 -->
+	<th:bolck th:replace="${main}"/>
+	
+	<footer>
+		<h1>하단영역</h1>
+		<div class="wrap">
+			<p>회사정보와 약관 등</p>
+		</div>
+	</footer>
+</body>
+</html>
