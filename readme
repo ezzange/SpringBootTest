@@ -30,6 +30,8 @@ admin페이지 - Including template fragments
 
 ----------------------------------------
 security
-(spring.io 의 DOC참고)
+
 https://docs.spring.io/spring-security/reference/servlet/configuration/java.html
+(spring.io 의 DOC참고)
+
 @EnableWebSecurity 어노테이션하여 SecurityFilterChain Bean적용(httpSecurity)
