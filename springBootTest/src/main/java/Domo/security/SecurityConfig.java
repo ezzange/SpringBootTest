@@ -13,11 +13,17 @@ public class SecurityConfig {
 		http
 			.authorizeRequests(authorize -> authorize
 					.antMatchers("/css/**").permitAll()					
-					.antMatchers("/","/admin").permitAll()
-					//.antMatchers("/").permitAll()
-					//.antMatchers("/admin").hasAnyRole("ADMIN")
+					//.antMatchers("/","/admin").permitAll()
+					.antMatchers("/").permitAll()
+					.antMatchers("/admin/**").hasAnyRole("ADMIN")
 				.anyRequest().authenticated()
 			)
+			.formLogin(formLogin->formLogin
+					.loginPage("/member/login")
+					.loginProcessingUrl("/member/login")//form태그의 action
+					.permitAll()
+					)
+			.csrf(csrf->csrf.disable())		
 			;
 		return http.build();
 	}
