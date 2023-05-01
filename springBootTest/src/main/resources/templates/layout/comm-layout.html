@@ -18,6 +18,11 @@ th:fragment="commLayout(head, main)">
 				<div ckass="wrap">
 					<ul>
 						<li><a href="/admin">관리자페이지</a></li>
+						<li>
+							<span th:text="${#authentication.name}">유저네임정보</span>
+							<a href="/logout">로그아웃</a>
+						</li>
+						
 					</ul>
 				</div>
 			</nav>
